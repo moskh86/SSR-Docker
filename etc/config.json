@@ -4,17 +4,17 @@
     "local_address": "127.0.0.1",
     "local_port": 1080,
     "port_password": {
-        "8989": {
-            "method": "aes-256-cfb",
-            "password": "p@ssw0rd"
+        "443": {
+            "method": "chach20",
+            "password": "1234"
         },
-        "8686": "p@ssw0rd"
+        "443": "1234"
     },
     "timeout": 300,
     "method": "chacha20",
-    "protocol": "auth_chain_a",
+    "protocol": "auth_sha1_v4",
     "protocol_param": "",
-    "obfs": "tls1.2_ticket_auth",
+    "obfs": "http_post",
     "obfs_param": "",
     "redirect": "",
     "dns_ipv6": false,
